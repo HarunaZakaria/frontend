@@ -9,20 +9,80 @@
   </head>
   <body>
     <nav class="bg-gray-800 p-4">
-      <div
-        class="container mx-auto flex justify-around items-center pl-12 pr-12"
-      >
-        <div class="text-white font-bold">Logo Here</div>
-        <ul class="flex space-x-4">
-          <li><a href="#" class="text-white hover:text-gray-400">Home</a></li>
-          <li><a href="#" class="text-white hover:text-gray-400">About</a></li>
-          <li>
-            <a href="#" class="text-white hover:text-gray-400">Services</a>
-          </li>
-          <li>
-            <a href="#" class="text-white hover:text-gray-400">Contact</a>
-          </li>
-        </ul>
+      <div class="container mx-auto flex justify-around items-center">
+        <!-- Brand/Logo -->
+        <div class="text-white text-xl font-bold">Logo</div>
+
+        <!-- Navigation Links (Desktop View) -->
+        <div class="hidden md:flex space-x-4">
+          <a
+            href="#"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md"
+            >About</a
+          >
+          <a
+            href="#"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md"
+            >Services</a
+          >
+          <a
+            href="#"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md"
+            >Contact</a
+          >
+        </div>
+
+        <!-- Mobile Menu Button (Hamburger) -->
+        <div class="md:hidden">
+          <button
+            id="menu-button"
+            class="text-gray-300 hover:text-white focus:outline-none focus:text-white"
+          >
+            <!-- Hamburger Icon -->
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu (Hidden by default) -->
+      <div id="menu" class="hidden md:hidden mt-2">
+        <a
+          href="#"
+          class="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md"
+          >About</a
+        >
+        <a
+          href="#"
+          class="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md"
+          >Services</a
+        >
+        <a
+          href="#"
+          class="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md"
+          >Contact</a
+        >
       </div>
     </nav>
   </body>
