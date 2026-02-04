@@ -1,1 +1,1 @@
- this is a project that I build to count the number of students that come to class in my lesson period and 
+This repo contains all the projects that I will be working on this year
